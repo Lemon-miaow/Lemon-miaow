@@ -18,6 +18,3 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           config_display: large
-          plugin_notable: yes
-          plugin_notable_indepth: yes
-          plugin_notable_repositories: yes
