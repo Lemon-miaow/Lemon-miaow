@@ -1,10 +1,7 @@
 name: Metrics
 on:
-  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
@@ -18,3 +15,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           config_display: large
+          plugin_notable: yes
+          plugin_notable_skipped: |
+            vdriasworld/whitelist-dashboard
+            vdriasworld/manual
+            vdriasworld/Region_BackUp
