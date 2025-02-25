@@ -34,4 +34,4 @@ jobs:
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
             gnuplot, javascript, ejs, stylus
           plugin_languages_sections: most-used
-          plugin_languages_colors: github
+          plugin_languages_colors: csharp:#3b831b, c++:#e35c7e
