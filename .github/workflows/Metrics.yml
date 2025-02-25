@@ -15,8 +15,16 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           config_display: large
+          
           plugin_notable: yes
           plugin_notable_skipped: |
             vdriasworld/whitelist-dashboard
             vdriasworld/manual
             vdriasworld/Region_BackUp
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_notable_from: all
+          plugin_notable_types: commit, issue, pull_request
+          
+          plugin_languages: yes
+          plugin_languages_indepth: yes
