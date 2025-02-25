@@ -26,12 +26,13 @@ jobs:
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
           plugin_notable_from: all
-          plugin_notable_types: commit, issue, pull_request
+          plugin_notable_types: >-
+            commit, issue, pull_request
           
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell
             gnuplot, javascript, ejs, stylus
           plugin_languages_sections: most-used
           plugin_languages_colors: csharp:#3b831b, c++:#e35c7e
