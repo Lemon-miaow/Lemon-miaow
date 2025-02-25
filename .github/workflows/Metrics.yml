@@ -14,13 +14,14 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          config_display: large
           
-          plugin_notable: yes
-          plugin_notable_skipped: |
+          config_display: large
+          repositories_skipped: |
             vdriasworld/whitelist-dashboard
             vdriasworld/manual
             vdriasworld/Region_BackUp
+          
+          plugin_notable: yes
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
           plugin_notable_from: all
